@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <style type="text/css">
+    body{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container{
+        display: grid;
+        margin: auto;
+        padding: 5vh;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 90vh;
+        background-color: rgba(255, 239, 239, 0.767);
+    }
+    .left{
+        background-color: rgba(255, 255, 255, 0.664);
+        grid-column: 1,2;
+        border: .2vw solid rgba(51, 51, 51, 0.589);
+    }
+    .right{
+        background-color: rgba(255, 255, 255, 0.664);
+        grid-column: 2,3;
+        border: .2vw solid rgba(51, 51, 51, 0.589);
+    }
+    .form{
+        width: 80%;
+        height: 60%;
+        padding: 3%;
+        margin: 10% auto;
+    }
+    .form input{
+        width: 80%;
+        height: 10%;
+        margin: 5% 9%;
+        border-radius: .5vw;
+        background: rgba(204, 204, 204, 0.137);
+        border: .15vw solid rgba(128, 0, 128, 0.404);
+    }
+    .form button{
+    width: 50%;
+    height: 10%;
+    margin: 5% 25%;
+    color: rgba(39, 0, 182, 0.952);
+    background: rgba(1, 1, 136, 0.233);
+    border: .15vw solid rgba(128, 0, 128, 0.404);
+    }
+    .right{
+        display: grid;
+        grid-template-columns: repeat(3, 22%);
+        grid-template-rows: repeat(2, 45%);
+        padding: 7%;
+        grid-row-gap: 15%;
+        grid-column-gap: 17%;
+        
+    }
+    #r1{
+        border: .2vw solid rgba(0, 0, 0, 0.822);
+        grid-column: 1,2;
+        grid-row: 1,2;
+    }
+    #r2{
+        border: .2vw solid rgba(0, 0, 0, 0.822);
+        grid-column: 2,3;
+        grid-row: 1,2;
+    }
+    #r3{
+        border: .2vw solid rgba(0, 0, 0, 0.822);
+        grid-column: 3,4;
+        grid-row: 1,2;
+    }
+    #r4{
+        border: .2vw solid rgba(0, 0, 0, 0.822);
+        grid-column: 1,2;
+        grid-row: 2,3;
+    }
+    #r5{
+        border: .2vw solid rgba(0, 0, 0, 0.822);
+        grid-column: 2,3;
+        grid-row: 2,3;
+    }
+    #r6{
+        border: .2vw solid rgba(0, 0, 0, 0.822);
+        grid-column: 3,4;
+        grid-row: 2,3;
+    }
+    .right button{
+        border: .15vw solid rgba(255, 255, 255, 0.623);
+        border-radius: .4vw;
+        color: rgba(2, 14, 2, 0.747);
+        background: honeydew;
+        border: .1vw solid rgba(128, 0, 128, 0.404);
+        float: left;
+        height: 80%;
+        width: 40%;
+        margin: auto 4% ;
+
+    }
+    .right img{
+        width: 70%;
+        height: 70%;
+        margin: auto;
+        padding: 1vw;
+    }
+    .right > div > div:first-child{
+        height: 60%;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .right > div > div:nth-child(2){
+        height: 30%;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        background: rgba(238, 238, 238, 0.603);
+    }
+    .right > div > div:last-child{
+        height: 10%;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        background: rgb(250, 250, 250);
+    }
+    .right > div > div:last-child p{
+        font-size: .9vw;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <form class="form">
+                <input type="text" placeholder="Name" id="name"/><br>
+                <input type="text" placeholder="Price" id="price" /><br>
+                <input type="text" placeholder="Discription" id="disc" /><br>
+                <input type="text" placeholder="Estimated Delivery" id="delivery" /><br>
+                <input type="text" placeholder="Img URL" id="url" /><br>
+                <button id="addProduct">Add Product</button>
+            </form>
+        </div>
+        <div class="right">
+            <div id="r1">
+                <div> <img src="https://freepngimg.com/thumb/shoes/28530-3-nike-shoes-transparent.png" alt=""></div>
+                <div id="data" ></div>
+                <div><button><p>Remove</p></button>
+                <button><p>Update</p></button></div>
+            </div>
+
+            <div id="r2">
+                <div><img src="https://freepngimg.com/thumb/shoes/27428-5-nike-shoes-transparent-background.png" alt=""></div>
+                <div id="data" ></div>
+                <div><button><p>Remove</p></button>
+                <button><p>Update</p></button></div>
+            </div>
+
+            <div id="r3">
+                <div><img src="https://freepngimg.com/thumb/nike/94054-force-air-jordan-footwear-offwhite-red.png" alt=""></div>
+                <div id="data" ></div>
+                <div> <button><p>Remove</p></button>
+                <button><p>Update</p></button></div>
+            </div>
+
+            <div id="r4">
+                <div><img src="https://banner2.cleanpng.com/20180430/dqq/kisspng-t-shirt-air-jordan-nike-shoe-adidas-5ae7c35f132210.5198340615251382710784.jpg" alt=""></div>
+                <div id="data" ></div>
+                <div> <button><p>Remove</p></button>
+                <button><p>Update</p></button></div>
+            </div>
+
+            <div id="r5">
+                <div><img src="https://freepngimg.com/thumb/shoes/28530-3-nike-shoes-transparent.png" alt=""></div>
+                <div id="data" ></div>
+                <div><button><p>Remove</p></button>
+                <button><p>Update</p></button></div>
+            </div>
+
+            <div id="r6">
+                <div><img src="https://freepngimg.com/thumb/shoes/27428-5-nike-shoes-transparent-background.png" alt=""></div>
+                <div id="data" ></div>
+                <div><button><p>Remove</p></button>
+                <button><p>Update</p></button></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
+
+<script>
+    var name = document.getElementById('name').value;
+    var price = document.getElementById('price').value;
+    var disc = document.getElementById('disc').value;
+    var delivery = document.getElementById('delivery').value;
+    var url = document.getElementById('url').value;
+
+    var data = document.getElementById('data');
+
+    var addProduct = document.getElementById('addProduct');
+
+    function adding(){
+        div = document.createElement('data')
+        div.append(`name`)
+    }
+
+    addProduct.addEventListener('click', adding)
+</script>
